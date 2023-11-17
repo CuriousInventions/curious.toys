@@ -1,0 +1,35 @@
+---
+layout: layouts/base.njk
+activeNav: Smart Paci
+---
+
+<div class="min-h-[80vh] bg-blue-700 bg-center bg-cover flex pt-24 pb-16"
+  style="background-image: url('/img/smartpaci/paci-header-background.svg')">
+  <div class="w-full flex h-full items-end align-middle justify-center mt-auto">
+    <div class="text-white text-center">
+      <h1
+        class="mb-3 font-extrabold text-transparent text-4xl md:text-5xl lg:text-7xl font-comforta bg-clip-text bg-gradient-to-tr from-blue-600 to-teal-400 drop-shadow-md">
+        Smart Paci
+      </h1>
+      <p class="mb-6">The world's first Open Source Smart Pacifier</p>
+      <button
+        class="rounded-full border-white py-1 px-4 border-2 hover:bg-sky-500 focus:bg-sky-500 focus:outline-2 focus:outline-white transition-all duration-200 hover:border-sky-500 hover:drop-shadow-md focus:border-sky-500 focus:drop-shadow-md outline-none">
+        Learn More
+      </button>
+    </div>
+  </div>
+  </div>
+
+  <div class="h-96 bg-sky-200 py-16">
+    <div class="container text-center">
+      <h2
+        class="font-extrabold text-transparent text-5xl font-comforta bg-clip-text bg-gradient-to-tr from-indigo-950 to-blue-600 drop-shadow-md leading-normal mb-3">
+        Secret Text~
+        </h2>
+        <p>Come back soon!</p>
+    </div>
+  </div>
+
+  <!-- Patreon -->
+  {{comp.patreonCTA() | safe}}
+</div>

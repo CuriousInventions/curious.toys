@@ -1,0 +1,14 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .container {
+    @apply mx-auto px-6;
+  }
+}
+
+/* Fixes visual bug where letters such as p and g will be cut off */
+.font-comforta.bg-clip-text {
+  line-height: 1.15;
+}

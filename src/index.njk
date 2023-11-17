@@ -1,0 +1,19 @@
+---
+layout: layouts/base.njk
+activeNav: Home
+---
+
+<div
+  class="min-h-[80vh] bg-gradient-to-t from-indigo-950 to-violet-700 bg-center bg-cover flex pt-24 pb-6"
+>
+  <div class="my-auto mx-auto">
+    <div class="container">
+      <h1
+        class="mb-3 font-extrabold text-transparent text-4xl md:text-5xl lg:text-7xl font-comforta bg-clip-text bg-gradient-to-tr from-fuchsia-300 to-orange-100 drop-shadow-md"
+      >
+        Great things are coming...
+      </h1>
+    </div>
+  </div>
+</div>
+{{ comp.patreonCTA() | safe }}
