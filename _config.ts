@@ -1,5 +1,6 @@
 import lume from "lume/mod.ts";
 import favicon from "lume/plugins/favicon.ts";
+import jsx_preact from "lume/plugins/jsx_preact.ts";
 import tailwindcss from "lume/plugins/tailwindcss.ts";
 import postcss from "lume/plugins/postcss.ts";
 
@@ -21,6 +22,7 @@ site
       input: "/favicon.webp",
     })
   )
+  .use(jsx_preact())
   .use(
     tailwindcss({
       extensions: [".mdx", ".jsx", ".tsx", ".md", ".html", ".njx"],
