@@ -15,30 +15,7 @@
     />
   </head>
   <body>
-    <nav class="absolute top-0 left-0 right-0 py-5">
-      <div class="container flex text-white items-center">
-        <a href="/">
-          <img
-            src="/img/logo.webp"
-            alt="Curious Toys Logo"
-            class="h-12 drop-shadow object-contain"
-          />
-        </a>
-        <div class="ml-auto font-comforta text-lg gap-x-6 hidden md:flex">
-          <a
-            href="/"
-            class="hover:opacity-80 active:underline active:underline-offset-8"
-            >Home</a
-          >
-          <a
-            href="/smart-paci"
-            class="hover:opacity-80 active:underline active:underline-offset-8"
-            >Smart Paci</a
-          >
-        </div>
-        <div class="ml-auto md:hidden text-3xl">🍔</div>
-      </div>
-    </nav>
+    {{ comp.mainNavbar() | safe }}
 
     {{ content | safe }}
     <footer class="bg-slate-800 text-white">
@@ -88,5 +65,7 @@
         </div>
       </div>
     </footer>
+
+    <script src="/js/navbar.js"></script>
   </body>
 </html>
