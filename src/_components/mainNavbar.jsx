@@ -38,7 +38,7 @@ export default (data) => {
                 class="h-12 drop-shadow object-contain"
               />
             </a>
-            <div class="toggleNavClosed ml-auto bg-slate-700 h-10 w-10 flex items-center justify-center rounded-lg opacity-70 hover:opacity-100">
+            <div class="toggleNavClosed ml-auto bg-slate-700 h-12 w-12 flex items-center justify-center rounded-lg opacity-70 hover:opacity-100">
               <img src="/img/icon/cross.svg" class="h-4 opacity-80 -mr-[1px]" />
             </div>
           </div>
