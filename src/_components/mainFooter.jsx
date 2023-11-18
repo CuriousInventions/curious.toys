@@ -34,7 +34,19 @@ export default (data) => {
                 <img
                   src="/img/icon/patreon.svg"
                   alt="Patreon Logo"
-                  class="h-6 mr-1 inline-block opacity-50 hover:opacity-90 transition-opacity"
+                  class="h-6 mr-2 inline-block opacity-50 hover:opacity-90 transition-opacity"
+                />
+              </a>
+              <a
+                href="https://discord.gg/tnSEc5KFSF"
+                target="_blank"
+                rel="noopener"
+                title="Curious Invention Patreon"
+              >
+                <img
+                  src="/img/icon/discord.svg"
+                  alt="Discord Logo"
+                  class="h-6 mr-2 inline-block opacity-50 hover:opacity-90 transition-opacity"
                 />
               </a>
               <a
