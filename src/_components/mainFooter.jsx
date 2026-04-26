@@ -2,19 +2,19 @@ export default (data) => {
   const products = [{ url: "/smart-paci", name: "Smart Paci" }];
   return (
     <>
-      <footer class="bg-slate-800 text-white">
+      <footer class="bg-purple-secondary text-white">
         <div class="container py-16">
           <div className="flex flex-col md:flex-row gap-4">
             <div class="mx-auto md:mx-0">
               <a href="/" class="mb-3 md:mb-2">
                 <img
-                  src="/img/logo.webp"
+                  src="/img/logo.svg"
                   alt="Curious Toys Logo"
                   class="h-12 drop-shadow"
                 />
               </a>
             </div>
-            <div class="mx-auto md:ml-auto md:mr-0 md:w-2/12 text-center md:text-left">
+            {/* <div class="mx-auto md:ml-auto md:mr-0 md:w-2/12 text-center md:text-left">
               <h6 class="mb-1">Products</h6>
               <ul class="md:text-sm md:text-left space-y-2 md:space-y-1">
                 {products.map((link) => (
@@ -25,12 +25,13 @@ export default (data) => {
                   </li>
                 ))}
               </ul>
-            </div>
+            </div> */}
           </div>
-          <hr class="rounded-full mt-6 mb-4 h-[2px] bg-slate-900 border-0 opacity-50" />
+          <hr class="rounded-full mt-6 mb-4 h-[2px] bg-purple-200 border-0 opacity-50" />
           <div className="flex flex-col md:flex-row gap-4 justify-between items-center">
             <p class="opacity-60 text-sm font-light">
-              &copy; Curious Inventions. All rights reserved.
+              &copy; 2023–{new Date().getFullYear()} Curious Inventions. All
+              rights reserved.
             </p>
             <div>
               <a

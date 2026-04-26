@@ -3,6 +3,10 @@
 @theme {
   --font-sans: "Lato", sans-serif;
   --font-comforta: "Comfortaa", sans-serif;
+  --font-bubblegum: "Bubblegum Sans", cursive;
+  --font-comic: "Comic Sans MS", "Comic Sans", cursive;
+  --color-purple-secondary: #6c00ab;
+  --color-pink-playful: #ff6eb4;
 }
 
 @layer components {
@@ -12,6 +16,43 @@
 }
 
 /* Fixes visual bug where letters such as p and g will be cut off */
-.font-comforta.bg-clip-text {
+.font-comforta.bg-clip-text,
+.font-bubblegum.bg-clip-text {
+  line-height: 1.15;
+}
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Comic Sans MS", "Comic Sans", cursive;
+  --font-heading: "Bubblegum Sans", cursive;
+  --font-comforta: "Comfortaa", sans-serif;
+  --font-bubblegum: "Bubblegum Sans", cursive;
+  --font-comic: "Comic Sans MS", "Comic Sans", cursive;
+  --font-lato: "Lato", sans-serif;
+  --color-purple-secondary: #6c00ab;
+  --color-pink-playful: #ff6eb4;
+}
+
+@layer base {
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-family: var(--font-heading);
+  }
+}
+
+@layer components {
+  .container {
+    @apply mx-auto px-6;
+  }
+}
+
+/* Fixes visual bug where letters such as p and g will be cut off */
+.font-comforta.bg-clip-text,
+.font-bubblegum.bg-clip-text,
+.font-heading.bg-clip-text {
   line-height: 1.15;
 }

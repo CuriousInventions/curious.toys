@@ -5,16 +5,16 @@ export default (data) => {
   ];
   return (
     <>
-      <nav class="absolute top-0 left-0 right-0 py-5" id="mainNav">
+      <nav class="absolute top-0 left-0 right-0 py-5 z-10" id="mainNav">
         <div class="container flex text-white items-center">
           <a href="/">
             <img
-              src="/img/logo.webp"
+              src="/img/logo.svg"
               alt="Curious Toys Logo"
-              class="h-12 drop-shadow object-contain"
+              class="h-16 drop-shadow object-contain"
             />
           </a>
-          <div class="ml-auto font-comforta text-lg gap-x-6 hidden md:flex">
+          {/* <div class="ml-auto font-comforta text-lg gap-x-6 hidden md:flex">
             {links.map((link) => (
               <a
                 href={link.url}
@@ -26,14 +26,14 @@ export default (data) => {
           </div>
           <div class="ml-auto md:hidden text-3xl toggleNavOpen">
             <img src="/img/icon/hamburger-menu.svg" class="h-6" />
-          </div>
+          </div> */}
         </div>
 
-        <div class="sidebar fixed top-0 right-0 h-screen bg-slate-800 w-80 drop-shadow-lg translate-x-full transition-transform z-30 px-6 py-4 md:hidden">
+        {/* <div class="sidebar fixed top-0 right-0 h-screen bg-slate-800 w-80 drop-shadow-lg translate-x-full transition-transform z-30 px-6 py-4 md:hidden">
           <div class="flex w-full mb-2 items-center">
             <a href="/">
               <img
-                src="/img/logo.webp"
+                src="/img/logo.svg"
                 alt="Curious Toys Logo"
                 class="h-12 drop-shadow object-contain"
               />
@@ -53,7 +53,7 @@ export default (data) => {
               ))}
             </ul>
           </div>
-        </div>
+        </div> */}
       </nav>
     </>
   );
