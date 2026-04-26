@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>{% if title %}{{ title }} - {% endif %}Curious Toys</title>
+    <title>{{ if title }}{{ title }} - {{ /if }}Curious Toys</title>
 
     <link rel="stylesheet" href="/theme.css" />
 
@@ -15,11 +15,11 @@
     />
   </head>
   <body>
-    {{ comp.mainNavbar() | safe }}
+    {{ comp.mainNavbar() }}
 
-    {{ content | safe }}
+    {{ content }}
 
-    {{ comp.mainFooter() | safe }}
+    {{ comp.mainFooter() }}
 
     <script src="/js/navbar.js"></script>
   </body>

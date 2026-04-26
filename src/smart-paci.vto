@@ -1,5 +1,5 @@
 ---
-layout: layouts/base.njk
+layout: layouts/base.vto
 activeNav: Smart Paci
 ---
 
@@ -18,18 +18,16 @@ activeNav: Smart Paci
       </button>
     </div>
   </div>
-  </div>
-
-  <div class="h-96 bg-sky-200 py-16">
-    <div class="container text-center">
-      <h2
-        class="font-extrabold text-transparent text-5xl font-comforta bg-clip-text bg-gradient-to-tr from-indigo-950 to-blue-600 drop-shadow-md leading-normal mb-3">
-        Secret Text~
-        </h2>
-        <p>Come back soon!</p>
-    </div>
-  </div>
-
-  <!-- Patreon -->
-  {{comp.patreonCTA() | safe}}
 </div>
+
+<div class="h-96 bg-sky-200 py-16">
+  <div class="container text-center">
+    <h2
+      class="font-extrabold text-transparent text-5xl font-comforta bg-clip-text bg-gradient-to-tr from-indigo-950 to-blue-600 drop-shadow-md leading-normal mb-3">
+      Secret Text~
+    </h2>
+    <p>Come back soon!</p>
+  </div>
+</div>
+
+{{ comp.patreonCTA() }}

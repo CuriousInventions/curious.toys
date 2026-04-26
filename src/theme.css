@@ -1,6 +1,9 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Lato", sans-serif;
+  --font-comforta: "Comfortaa", sans-serif;
+}
 
 @layer components {
   .container {

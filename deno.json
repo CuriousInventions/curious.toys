@@ -1,14 +1,17 @@
 {
   "tasks": {
-    "lume": "echo \"import 'lume/cli.ts'\" | deno run --unstable -A -",
+    "lume": "echo \"import 'lume/cli.ts'\" | deno run -A -",
     "build": "deno task lume",
     "serve": "deno task lume -s"
   },
   "imports": {
-    "lume/": "https://deno.land/x/lume@v1.19.1/"
+    "lume/": "https://cdn.jsdelivr.net/gh/lumeland/lume@3.2.4/",
+    "lume/jsx-runtime": "https://cdn.jsdelivr.net/gh/oscarotero/ssx@0.1.14/jsx-runtime.ts"
   },
+  "unstable": ["temporal"],
   "compilerOptions": {
     "jsx": "react-jsx",
-    "jsxImportSource": "npm:preact"
+    "jsxImportSource": "lume",
+    "types": ["lume/types.ts"]
   }
 }
