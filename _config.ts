@@ -16,7 +16,7 @@ site
   .ignore("README.md")
   .copy("static", ".")
   .add("theme.css")
-  .use(favicon({ input: "/favicon.webp" }))
+  .use(favicon({ input: "/static/img/logo-icon.svg" }))
   .use(jsx())
   .use(tailwindcss())
   .use(postcss());
