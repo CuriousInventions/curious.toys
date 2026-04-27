@@ -1,3 +1,4 @@
 _site
 src/_cache
 _cache
+.DS_Store
