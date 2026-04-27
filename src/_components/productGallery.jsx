@@ -15,7 +15,7 @@ export default function ProductGallery() {
   ];
 
   return (
-    <div className="bg-white py-20">
+    <div className="bg-[#F3E8FF] py-20">
       <div className="container">
         <h2 className="font-bubblegum text-4xl md:text-5xl text-purple-secondary text-center mb-4">
           See It Up Close
